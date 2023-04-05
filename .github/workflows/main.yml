@@ -12,4 +12,5 @@ jobs:
       - uses: denoland/setup-deno@v1
         with:
           deno-version: vx.x.x
+      - run: echo $ACTIONS_CACHE_URL
       - run: deno run -A index.ts
